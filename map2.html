@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e1fb05122064ffe953396c8314c714d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8e1fb05122064ffe953396c8314c714d" ></div>
+        
+</body>
+<script>    
+    
+            var map_8e1fb05122064ffe953396c8314c714d = L.map(
+                "map_8e1fb05122064ffe953396c8314c714d",
+                {
+                    center: [37.42, -122.04],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    dragging: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e0d078c365c24a8aa2d89a3ee3a50eed = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 12, "maxZoom": 12, "minZoom": 12, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8e1fb05122064ffe953396c8314c714d);
+        
+    
+            var feature_group_d979b3c6b3c440599ef3a639b833ca83 = L.featureGroup(
+                {}
+            ).addTo(map_8e1fb05122064ffe953396c8314c714d);
+        
+    
+            var marker_ac3b3ccfb2684bdaa309f5dbf11d22b1 = L.marker(
+                [37.415531, -122.089768],
+                {}
+            ).addTo(feature_group_d979b3c6b3c440599ef3a639b833ca83);
+        
+    
+            var icon_9228b51a1ef04c88b19d0fb8679d2af5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ac3b3ccfb2684bdaa309f5dbf11d22b1.setIcon(icon_9228b51a1ef04c88b19d0fb8679d2af5);
+        
+    
+        var popup_ba48228c67b94022b139004a52ea3f57 = L.popup({"maxWidth": 630});
+
+        
+            var html_2d0cf5dab5c643b184c92af20eef8375 = $(`<div id="html_2d0cf5dab5c643b184c92af20eef8375" style="width: 100.0%; height: 100.0%;">     <style type="text/css">         .colum {             overflow: auto;         	margin: 10px;         	padding: 10px;         	display: flex;         }         .pic{            width: 35%;            float: left;            text-align: center;            padding: 10px;         }         .text{            width: 60%;            float: right;            text-align: left;            padding: 20px;         }         img{             width: 200px;             height: 200px;         }     </style>      <div class="colum">         <div class="pic">             <img src="images/fortuna.jpg" alt="fortuna">         </div>         <div class="text">             <h3>VILLA FORTUNA</h3>             <p>Mountain View, CA</p>             <hr>             <p>Villa Fortuna will be offering 20 townhomes.</p>             <p>Each townhome ranges between 1,600 to 1,900 square feet, featuring 3 to 4 bedrooms with attached 2-car garage.</p>         </div>     </div>     </div>`)[0];
+            popup_ba48228c67b94022b139004a52ea3f57.setContent(html_2d0cf5dab5c643b184c92af20eef8375);
+        
+
+        marker_ac3b3ccfb2684bdaa309f5dbf11d22b1.bindPopup(popup_ba48228c67b94022b139004a52ea3f57)
+        ;
+
+        
+    
+    
+            var marker_1ca7973d961d469aa44959dfb56e53e4 = L.marker(
+                [37.352058, -121.9577],
+                {}
+            ).addTo(feature_group_d979b3c6b3c440599ef3a639b833ca83);
+        
+    
+            var icon_db783fc59de84599b6fca94aa3d88a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1ca7973d961d469aa44959dfb56e53e4.setIcon(icon_db783fc59de84599b6fca94aa3d88a9c);
+        
+    
+        var popup_e0337b0c02e44cf184aa7730e0d27dd2 = L.popup({"maxWidth": 630});
+
+        
+            var html_ebbb0c72043f456f889beab6fc971792 = $(`<div id="html_ebbb0c72043f456f889beab6fc971792" style="width: 100.0%; height: 100.0%;">     <style type="text/css">         .container {             overflow: auto;         	margin: 10px;         	padding: 10px;         	display: flex;         }         .pic{            width: 35%;            float: left;            text-align: center;            padding: 10px;         }         .text{            width: 50%;            float: left;            text-align: left;            padding: 20px;         }         img{             width: 200px;             height: 200px;         }     </style>      <div class="container">         <div class="pic">             <img src="images/anantara.jpg" alt="anantara">         </div>         <div class="text">             <h2>ANANTARA VILLAS</h2>             <p>Santa Clara, CA</p>             <hr>             <p>Fifty-six luxury condominiums.</p>         </div>     </div>     </div>`)[0];
+            popup_e0337b0c02e44cf184aa7730e0d27dd2.setContent(html_ebbb0c72043f456f889beab6fc971792);
+        
+
+        marker_1ca7973d961d469aa44959dfb56e53e4.bindPopup(popup_e0337b0c02e44cf184aa7730e0d27dd2)
+        ;
+
+        
+    
+</script>
